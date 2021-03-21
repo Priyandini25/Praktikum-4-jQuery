@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery-3.6.0.min.js"> </script>
+	<script type="text/javascript">
+		//untuk menyembunyikan dam menampilkan gambar upn
+		$(document).ready(function () {
+			$(".sembunyi").click(function() {$("#foto").hide("slow")});
+			$(".tampil").click(function() {$("#foto").show("slow")});
+		});
+	</script>
+	<script type="text/javascript">
+		//untuk menyembunyikan dam menampilkan gambar himasifo
+		$(document).ready(function () {
+			$(".sembunyi").click(function() {$("#gambar").hide("slow")});
+			$(".tampil").click(function() {$("gambar").show("slow")});
+		});
+	</script>
+</head>
+<body>
+	<button class="sembunyi"> sembunyikan </button>
+	<button class="tampil"> tampilkan </button>
+	<p></p>
+	<button class="sembunyi"> sembunyikan </button>
+	<button class="tampil"> tampilkan </button>
+	<p> <img id ="foto" src="jaehyun.jpg"></p>
+	<p><img id ="gambar" src="weilong.jpg"></p>
+</body>
+</html>
